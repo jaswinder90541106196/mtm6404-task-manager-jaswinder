@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Task Manager Web Application" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Task Manager</title>
+
+    <style>
+      /* Base Styles */
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(120deg, #f0f8ff 0%, #e6f2ff 100%); /* Light blue gradient */
+        color: #333;
+      }
+
+      /* Navigation Bar Styling */
+      nav {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Warm orange-pink gradient */
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        padding: 0 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: black; /* Text color set to black */
+        transition: color 0.3s, transform 0.3s;
+      }
+
+      nav ul li:hover {
+        color: #444; /* Slightly darker black on hover */
+        cursor: pointer;
+        transform: scale(1.1); /* Grow effect on hover */
+      }
+
+      /* Heading Styling */
+      h1,
+      h2 {
+        text-align: center;
+        color: #444;
+        margin-top: 20px;
+        font-family: 'Georgia', serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+
+      /* Task List Styling */
+      ul {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      li {
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      li:hover {
+        background-color: #ffe0b2; /* Soft peach on hover */
+        transform: translateX(10px); /* Slight movement on hover */
+      }
+
+      /* Footer Styling */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Same warm gradient as nav */
+        color: white;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+
+      /* Button Styling */
+      button {
+        padding: 12px 30px;
+        background: linear-gradient(135deg, #42e695, #3bb2b8); /* Cool green-teal gradient */
+        border: none;
+        border-radius: 30px;
+        color: white;
+        font-size: 16px;
+        margin-top: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        background: linear-gradient(135deg, #4caf50, #388e3c); /* Darker green on hover */
+        transform: scale(1.05); /* Slight grow on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Add responsive design */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+        }
+
+        nav ul li {
+          padding: 10px;
+          text-align: center;
+        }
+
+        ul {
+          width: 90%;
+        }
+
+        button {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Tasks</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav> -->
+
+    <!-- App Content -->
+    <div id="root">
+      <h1>Task Manager</h1>
+      <h2>Your Tasks</h2>
+      <ul>
+        <li>Task 1: Finish the project</li>
+        <li>Task 2: Buy groceries</li>
+        <li>Task 3: Plan a trip</li>
+        <li>Task 4: Read a book</li>
+        <li>Task 5: Exercise</li>
+      </ul>
+      <button>Add New Task</button>
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer>
+      <p>© 2024 Task Manager. All Rights Reserved.</p>
+    </footer> -->
+  </body>
+</html>
